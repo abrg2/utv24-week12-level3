@@ -90,9 +90,16 @@ class ProductList
     {
         productList.Add(product);
     }
+    
+    public void SortPriceLowToHigh()
+    {
+        productList = productList.OrderBy(p => p.price).ToList();
+    }
 
     public void ShowProducts()
     {
+        this.SortPriceLowToHigh();
+
         foreach (Product product in productList)
         {
             Console.WriteLine("Product:");
