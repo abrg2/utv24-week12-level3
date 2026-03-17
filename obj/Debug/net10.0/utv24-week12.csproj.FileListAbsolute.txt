@@ -1,0 +1,14 @@
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.AssemblyInfoInputs.cache
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.AssemblyInfo.cs
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.csproj.CoreCompileInputs.cache
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\bin\Debug\net10.0\utv24-week12.exe
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\bin\Debug\net10.0\utv24-week12.deps.json
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\bin\Debug\net10.0\utv24-week12.runtimeconfig.json
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\bin\Debug\net10.0\utv24-week12.dll
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\bin\Debug\net10.0\utv24-week12.pdb
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.dll
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\refint\utv24-week12.dll
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.pdb
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\utv24-week12.genruntimeconfig.cache
+C:\Users\Andreas\source\repos\Lectures\UTV-24\utv24-week12\obj\Debug\net10.0\ref\utv24-week12.dll
