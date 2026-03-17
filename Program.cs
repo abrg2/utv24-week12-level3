@@ -75,7 +75,9 @@ void main()
         productList.AddProduct(product);
     }
 
+    productList.SortPriceLowToHigh();
     productList.ShowProducts();
+    productList.ShowSum();
 
     Console.ReadKey();
 }
@@ -98,8 +100,6 @@ class ProductList
 
     public void ShowProducts()
     {
-        this.SortPriceLowToHigh();
-
         foreach (Product product in productList)
         {
             Console.WriteLine("Product:");
@@ -108,9 +108,11 @@ class ProductList
             Console.WriteLine($"     Price: {product.price}");
             Console.WriteLine();
         }
+    }
 
+    public void ShowSum()
+    {
         long sum = productList.Sum(p => p.price);
-
         Console.WriteLine("Price sum: " + sum);
     }
 }
