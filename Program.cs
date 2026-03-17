@@ -103,9 +103,9 @@ class ProductList
         foreach (Product product in productList)
         {
             Console.WriteLine("Product:");
-            Console.WriteLine($"  {product.category}");
-            Console.WriteLine($"  {product.name}");
-            Console.WriteLine($"  {product.price}");
+            Console.WriteLine($"  Category: {product.category}");
+            Console.WriteLine($"      Name: {product.name}");
+            Console.WriteLine($"     Price: {product.price}");
             Console.WriteLine();
         }
 
