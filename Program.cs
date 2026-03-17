@@ -1,17 +1,4 @@
-﻿/* Constants */
-
-List<string> PRODUCT_CATEGORIES = new() {
-    "Processor",
-    "RAM",
-    "Motherboard",
-    "Monitor",
-    "Storage",
-    "Computer case",
-    "Power supply",
-    "Cables"
-};
-
-/* Program entry point */
+﻿/* Program entry point */
 
 main();
 
@@ -40,9 +27,9 @@ void main()
         {
             Console.WriteLine("Category options: ");
 
-            for (int i = 0; i < PRODUCT_CATEGORIES.Count; i++)
+            for (int i = 0; i < Product.CATEGORIES.Length; i++)
             {
-                Console.WriteLine($"  {1 + i}. {PRODUCT_CATEGORIES[i]}");
+                Console.WriteLine($"  {1 + i}. {Product.CATEGORIES[i]}");
             }
             Console.WriteLine();
             Console.Write("Enter a category number: ");
@@ -52,14 +39,14 @@ void main()
 
             if (isValidUint)
             {
-                if (categoryNum >= 1 && categoryNum <= PRODUCT_CATEGORIES.Count)
+                if (categoryNum >= 1 && categoryNum <= Product.CATEGORIES.Length)
                 {
                     int productCategoryIndex = (int)(categoryNum - 1);
-                    product.category = PRODUCT_CATEGORIES[productCategoryIndex];
+                    product.category = Product.CATEGORIES[productCategoryIndex];
                     break;
                 }
                 else
-                    Console.WriteLine($"Invalid category number. Number must match 1 <= N <= {PRODUCT_CATEGORIES.Count}");
+                    Console.WriteLine($"Invalid category number. Number must match 1 <= N <= {Product.CATEGORIES.Length}");
             }
             else
                 Console.WriteLine("Invalid product category. Number must be a non-negative integer.");
@@ -123,6 +110,17 @@ class ProductList
 
 class Product
 {
+    public static readonly string[] CATEGORIES = {
+        "Processor",
+        "RAM",
+        "Motherboard",
+        "Monitor",
+        "Storage",
+        "Computer case",
+        "Power supply",
+        "Cables"
+    };
+
     public string category = "";
     public string name = "";
     public uint price = 0;
