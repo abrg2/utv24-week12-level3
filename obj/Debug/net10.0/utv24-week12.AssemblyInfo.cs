@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("utv24-week12")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4efff750e328e9d43f5560a4542bdf886cd32fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("utv24-week12")]
 [assembly: System.Reflection.AssemblyTitleAttribute("utv24-week12")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

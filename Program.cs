@@ -34,15 +34,8 @@ void main()
             break;
         }
 
-
-
-
         Product product = new();
 
-
-
-
-        // Category
         while (true)
         {
             Console.WriteLine("Category options: ");
@@ -72,16 +65,9 @@ void main()
                 Console.WriteLine("Invalid product category. Number must be a non-negative integer.");
         }
 
-
-
-
-        // Product name
         Console.Write("Enter product name: ");
         product.name = Console.ReadLine().Trim();
 
-
-
-        // Product price
         while (true)
         {
             Console.Write("Enter price: ");
@@ -93,14 +79,11 @@ void main()
                 if (product.price >= 0 && product.price <= 999999)
                     break;
                 else
-                    Console.WriteLine($"Invalid category number. Number must match 0 <= N <= 999999");
+                    Console.WriteLine($"Invalid price. Price must match 0 <= N <= 999999");
             }
             else
-                Console.WriteLine("Invalid product category. Number must be a non-negative integer.");
+                Console.WriteLine("Invalid price. Number must be a non-negative integer.");
         }
-
-
-
 
         productList.AddProduct(product);
     }
@@ -123,16 +106,16 @@ class ProductList
 
     public void ShowProducts()
     {
-        foreach (Product product in this.productList)
+        foreach (Product product in productList)
         {
             Console.WriteLine("Product:");
-            Console.WriteLine("  " + product.category);
-            Console.WriteLine("  " + product.name);
-            Console.WriteLine("  " + product.price);
+            Console.WriteLine($"  {product.category}");
+            Console.WriteLine($"  {product.name}");
+            Console.WriteLine($"  {product.price}");
             Console.WriteLine();
         }
 
-        long sum = this.productList.Sum(p => p.price);
+        long sum = productList.Sum(p => p.price);
 
         Console.WriteLine("Price sum: " + sum);
     }
