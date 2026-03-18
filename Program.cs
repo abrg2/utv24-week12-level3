@@ -86,7 +86,7 @@ void main()
 
 class ProductList
 {
-    public List<Product> productList = new();
+    protected List<Product> productList = new();
 
     public void AddProduct(Product product)
     {
